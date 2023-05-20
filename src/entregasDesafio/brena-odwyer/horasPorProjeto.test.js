@@ -1,7 +1,7 @@
 const { calcularHorasDeProjeto } = require('../../dominio/calculadora/Projeto/horasPorProjeto')
 
 describe('Calcular Horas de projeto', () => {
-    test('Se a lista contendo três funcionalidades terá 24 horas', () => {
+    test('Se a lista contendo três (setup, construcao_1_pagina e ssr) funcionalidades terá 24 horas', () => {
         const listaDeFuncionalidades = ["setup", "construcao_1_pagina", "ssr"] // somando as horas lá na constante dá 24
 
         expect(calcularHorasDeProjeto(listaDeFuncionalidades)).toBe(24)
@@ -11,5 +11,5 @@ describe('Calcular Horas de projeto', () => {
         const listaFuncionalidadeInexistente = ["testes"]
         expect(calcularHorasDeProjeto(listaFuncionalidadeInexistente)).toBeNaN()
 
-    })
+    }) // posso fazer um teste incluindo todas as funcionalidades
 })
