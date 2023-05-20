@@ -1,4 +1,4 @@
-const { HORAS_POR_FUNCIONALIDADE } = require('../../calculadora/Projeto/valorProjeto')
+const { HORAS_POR_FUNCIONALIDADE } = require('../dominio/calculadora/constantes/constantes')
 const calcularHorasDeProjeto = (listaDeFuncionalidades) => (
   listaDeFuncionalidades
     .map(func => HORAS_POR_FUNCIONALIDADE[func])
