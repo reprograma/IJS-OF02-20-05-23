@@ -1,9 +1,10 @@
 const { calcularValorPorHora } = require("../../dominio/calculadora/Hora/valorHora")
-const salarioMinimo = 1300 ;
-const valorPorHoraCalculado = calcularValorPorHora (salarioMinimo);
+
 
 describe("Calcular valor por hora", () => {
-    test("Salário minimo 1300 reais", () => {   
+    test("Salário minimo 1300 reais", () => {  
+        const salarioMinimo = 1300 ;
+        const valorPorHoraCalculado = calcularValorPorHora (salarioMinimo); 
         const valorPorHoraEsperado = 8;
         
         expect(valorPorHoraCalculado).toBe(valorPorHoraEsperado);
