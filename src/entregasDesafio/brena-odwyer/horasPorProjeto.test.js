@@ -13,3 +13,10 @@ describe('Calcular Horas de projeto', () => {
 
     }) // posso fazer um teste incluindo todas as funcionalidades
 })
+
+describe('Calcular Horas de projeto', () => {
+    test('Com a lista contendo todas as funcionalidades terá 104 horas', () => {
+        const listaDeFuncionalidades = ["setup", "formulario", "responsividade", "otimizacao_seo", "construcao_1_pagina", "integracao_mailchimp", "ssr", "integracao_api_propria"] 
+        expect(calcularHorasDeProjeto(listaDeFuncionalidades)).toBe(104)
+    })
+})
