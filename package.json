@@ -7,5 +7,15 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "node": "^20.2.0"
+  },
+  "devDependencies": {
+    "jest": "^29.5.0"
+  },
+
+    "scripts": {
+      "test": "jest"
+    }
   }
-}
+
+
