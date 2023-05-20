@@ -1,17 +1,17 @@
 // Testes aqui
-const {calcularValorPorHora} = require("../../dominio/calculadora/Hora/valorHora")
+const {calcularValorPorHora} = require("../../../dominio/calculadora/Hora/valorHora")
 
 describe("Calcular valor por Hora", () => {
     
-    test("Salario minimo 1300,00", () => {
-        expect(calcularValorPorHora(2200)).toBe(13)
+    test("Salario é 2000,00 e o valor da hora é 12,00", () => {
+        expect(calcularValorPorHora(2000)).toBe(12)
     })
 
-    test("Hora paga é menor que 10" , () => {
+    test("Salario é 1500,00, hora paga é menor que 10" , () => {
         expect(calcularValorPorHora(1500)).toBeLessThan(10);
     })
 
-    test("Hora paga maior igual a 10" , () => {
+    test("Salario é 2000,00, hora paga maior igual a 10" , () => {
         expect(calcularValorPorHora(2000)).toBeGreaterThanOrEqual(10);
     })
 
