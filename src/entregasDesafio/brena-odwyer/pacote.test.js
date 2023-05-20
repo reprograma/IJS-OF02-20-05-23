@@ -28,6 +28,13 @@ describe('Calcular pacote', () => {
 
     })
 
+    test('Um projeto de 200 horas deve retornar "pacote_premium"', () => {
+        const horasDeProjeto = 200
+
+        expect(calcularPacote(horasDeProjeto)).toBe("pacote_premium") 
+
+    })
+
     
 
 })
