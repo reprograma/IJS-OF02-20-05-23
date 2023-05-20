@@ -1,6 +1,4 @@
-const {
-  calcularValorPorHora,
-} = require("../../dominio/calculadora/Hora/valorHora");
+const { calcularValorPorHora } = require("./valorHora");
 
 describe("Calcular valor por hora", () => {
   const rendaMensal = 1300;
@@ -13,7 +11,7 @@ describe("Calcular valor por hora", () => {
     expect(calcularValorPorHora(rendaMensal)).toBeGreaterThan(0);
   });
 
-  test.skip("Deve retornar 'Not a valid input' se o input for diferente de um número ", () => {
+  test("Deve retornar 'Not a valid input' se o input for diferente de um número ", () => {
     expect(calcularValorPorHora([])).toEqual("Not a valid input");
   });
 });
