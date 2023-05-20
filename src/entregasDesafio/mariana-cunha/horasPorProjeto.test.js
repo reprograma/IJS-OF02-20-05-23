@@ -34,13 +34,4 @@ describe("calcularHorasDeProjeto", () => {
     expect(calcularHorasDeProjeto(todasFuncionalidades)).toBe(104)
   })
 
-  // test("calcular um projeto de 40h", () => {
-
-
-  //   const horasCalculadas = calcularHorasDeProjeto(listaDeFuncionalidades);
-
-  //   expect(horasCalculadas).toBe(40);
-
-  //   // console.log('horas', horasCalculadas);
-  // });
 });
