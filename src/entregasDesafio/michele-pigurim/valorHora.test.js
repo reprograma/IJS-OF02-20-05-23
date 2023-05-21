@@ -10,6 +10,4 @@ describe("Calcular volar por hora", () => {
     expect(valorPorHoraReal).toBe(valorPorHoraEsperado);
     expect(valorPorHoraReal).toBeGreaterThan(zero);
   });
-
-  //   test("", () => {});
 });
