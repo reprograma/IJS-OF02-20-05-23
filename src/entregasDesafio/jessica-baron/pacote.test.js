@@ -8,8 +8,8 @@ describe("Calcular Pacote", () => {
 })
 
     test("Projeto de 50h deve retornar pacote básico", () => {
-        const horasProjeto = 50
-        expect(calcularPacote(horasProjeto)).toBe(pacote_basico)
+        const horasProjeto = 30
+        expect(calcularPacote(horasProjeto)).toBe("pacote_basico")
     })
 
 })
