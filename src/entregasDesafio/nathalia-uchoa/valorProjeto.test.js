@@ -21,4 +21,14 @@ describe("Testando o valor do projeto de acordo com o pacote", () => {
         });
     });
 
+    describe("Testando o pacote INTERMEDIÁRIO", () => {
+        beforeEach(() => {
+            pacote.calcularPacote.mockReturnValue("pacote_intermediario");
+        });
+        test("Retorna o valor total do projeto", () => {
+            const result = calcularValorTotalProjeto(funcionalidades, valorHora);
+            expect(result).toEqual(307);
+        });
+    });
+
 });
