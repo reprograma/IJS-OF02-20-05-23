@@ -19,7 +19,7 @@ describe("Calcular horas de projeto", () => {
         const listaTodas = [
             "setup",
             "formulario",
-            "responsividade", 
+            "responsividade",
             "otimizacao_seo",
             "construcao_1_pagina",
             "integracao_mailchimp",
@@ -27,6 +27,7 @@ describe("Calcular horas de projeto", () => {
             "integracao_api_propria"
         ]
 
+        expect(calcularHorasDeProjeto(listaTodas)).toBe(104)
 
     })
 
