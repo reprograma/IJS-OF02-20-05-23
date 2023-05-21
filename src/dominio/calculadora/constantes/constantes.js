@@ -1,4 +1,4 @@
-const DIAS_UTEIS_NO_MES = 22;
+const DIAS_UTEIS_NO_MES = 22; // esse formato de constante com maiuscula e underline é padrão que não é pra mexer mesmo, geralmente é regra de negócio
 const HORAS_POR_DIA = 8;
 
 const MAX_HORAS_POR_PACOTE = {
@@ -9,8 +9,8 @@ const MAX_HORAS_POR_PACOTE = {
 
 const TAXAS_CONTRATUAIS_POR_PACOTE = {
   pacote_basico: 1.1, // 10%
-  pacote_intermediario: 1.2, // 12%
-  pacote_premium: 1.5 // 15%
+  pacote_intermediario: 1.12, // 12%
+  pacote_premium: 1.15 // 15%
 }
 
 const HORAS_POR_FUNCIONALIDADE = {
