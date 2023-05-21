@@ -31,4 +31,14 @@ describe("Testando o valor do projeto de acordo com o pacote", () => {
         });
     });
 
+    describe("Testando o pacote PREMIUM", () => {
+        beforeEach(() => {
+            pacote.calcularPacote.mockReturnValue("pacote_premium");
+        });
+        test("Retorna o valor total do projeto", () => {
+            const result = calcularValorTotalProjeto(funcionalidades, valorHora);
+            expect(result).toEqual(384);
+        });
+    });
+
 });
