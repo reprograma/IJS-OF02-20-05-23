@@ -1,5 +1,5 @@
 {
-  "name": "aceleradora-js-desafio",
+  "name": "oficina-reprograma",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -8,5 +8,8 @@
   "license": "ISC",
   "devDependencies": {
     "jest": "^29.5.0"
-  }
+  },
+  "scripts": {
+    "test": "jest"
+  }  
 }
