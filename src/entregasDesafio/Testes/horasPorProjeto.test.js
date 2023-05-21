@@ -1,4 +1,4 @@
-const {calcularHorasDeProjeto} = require('./horasPorProjeto');
+const {calcularHorasDeProjeto} = require('../erika-oliveira/Projeto/horasPorProjeto');
 
 describe("Calcular Horas de projeto", () => {
   test("Testar se a lista contendo 03 funcionalidades terá 24 horas", () => {
@@ -11,7 +11,7 @@ describe("Calcular Horas de projeto", () => {
   test("Calcular horas quando não existe a funcionalidade", () => {
     const listaDeFuncionalidadesInexistentes = ["testes"]
 
-    expect(calcularHorasDeProjeto(listaDeFuncionalidadesInexistentes)).toBeNan()
+    expect(calcularHorasDeProjeto(listaDeFuncionalidadesInexistentes)).toBeNaN()
   })
 
   test("Todas as funcionalidades retornam 104 horas de projeto", () => {
@@ -26,6 +26,6 @@ describe("Calcular Horas de projeto", () => {
       "integracao_api_propria",
     ]
 
-    expect(calcularHorasDeProjeto(listaTodas)).toBE(104)
+    expect(calcularHorasDeProjeto(listaTodas)).toBe(104)
   })
 })
