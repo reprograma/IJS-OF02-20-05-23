@@ -1,7 +1,6 @@
 const { calcularValorPorHora } = require("../../dominio/calculadora/Hora/valorHora")
 
 
-
 describe("Calcular valor por hora", () => {
 
     const salarioMinimo = 1300
