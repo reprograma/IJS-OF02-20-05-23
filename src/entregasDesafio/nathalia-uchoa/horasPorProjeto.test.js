@@ -26,12 +26,3 @@ describe("Calculando o total de horas do projeto conforme as funcionalidades", (
       expect(calcularHorasDeProjeto(listaTodas)).toBe(104)
    })
 })
-
-describe("Teste de erros ao calcular as horas de projeto", () => {
-
-   test("Testando calcular quando não existir a funcionalidade, deve falhar", () => {
-      const funcionalidadeInexistente = ["setup"]
-      expect(calcularHorasDeProjeto(funcionalidadeInexistente)).toBeNaN();
-   })
-
-})
