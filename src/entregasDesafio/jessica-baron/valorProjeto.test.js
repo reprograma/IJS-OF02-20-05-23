@@ -17,7 +17,6 @@ describe("Testes com o Cálculo do Valor Total de Projeto", () => {
     })
 
     test("A taxa contratual desse projeto é de 10%", () => {
-
         const funcionalidades = [
             "setup",
             "otimizacao_seo"
