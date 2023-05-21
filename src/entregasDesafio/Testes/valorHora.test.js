@@ -1,4 +1,4 @@
-const calcularValorPorHora = require('../../dominio/calculadora/Hora/valorHora');
+const { calcularValorPorHora } = require('../erika-oliveira/Hora/valorHora');
 
 describe('Calcular Valor por Hora', () =>{
   test('Salário mínimo de 1300 reais', () => {
