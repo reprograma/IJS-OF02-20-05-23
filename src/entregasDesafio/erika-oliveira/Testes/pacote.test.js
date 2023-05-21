@@ -1,4 +1,4 @@
-const { calcularPacote } = require('../erika-oliveira/Pacote/pacote');
+const { calcularPacote } = require('../Pacote/pacote');
 
 describe("Calcular pacote", () => {
   test("Deve retornar pacote básico", () => {

@@ -1,4 +1,4 @@
-const { calcularValorTotalProjeto } = require('../erika-oliveira/Projeto/valorProjeto');
+const { calcularValorTotalProjeto } = require('../Projeto/valorProjeto');
 
 const valorDaHora = 8;
 

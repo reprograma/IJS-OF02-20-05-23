@@ -1,4 +1,4 @@
-const {calcularHorasDeProjeto} = require('../erika-oliveira/Projeto/horasPorProjeto');
+const {calcularHorasDeProjeto} = require('../Projeto/horasPorProjeto');
 
 describe("Calcular Horas de projeto", () => {
   test("Testar se a lista contendo 03 funcionalidades terá 24 horas", () => {
