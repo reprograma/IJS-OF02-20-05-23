@@ -1,5 +1,5 @@
 //Testes para as condições de contorno (quando é básico, intermediário e premium), precisa ter esses 3 testes
-const { calcularValorTotalProjeto } = require('../../dominio/calculadora/Projeto/valorProjeto')
+const { calcularValorTotalProjeto } = require('./valorProjeto')
 const { calcularValorPorHora } = require('../../dominio/calculadora/Hora/valorHora')
 
 describe('Calcula o valor total do projeto', () => {
@@ -16,9 +16,8 @@ describe('Calcula o valor total do projeto', () => {
 
     })
     test('Calcula o valor total do projeto com as taxas contratuais por pacote, sendo um pacote premium', () => {
-        const valorHora = 20
-        const funcionalidadesVezesDois = ["setup", "formulario", "responsividade", "otimizacao_seo", "construcao_1_pagina", "integracao_mailchimp", "ssr", "integracao_api_propria", "setup", "formulario", "responsividade", "otimizacao_seo", "construcao_1_pagina", "integracao_mailchimp", "ssr", "integracao_api_propria"]
-        expect(calcularValorTotalProjeto(funcionalidadesVezesDois, valorHora)).toBe(0) // valor da hora 20 * 208(soma das funcionalidades *2) * 1.15% do pacote_premium
+        const funcionalidadesQueSomamPacotepremium = ["setup", "formulario", "responsividade", "otimizacao_seo", "construcao_1_pagina", "integracao_mailchimp", "ssr", "integracao_api_propria", "setup", "formulario", "responsividade", "otimizacao_seo", "construcao_1_pagina", "integracao_mailchimp", "ssr", "ssr"] // soma 200 horas e entra no pacote premium
+        expect(calcularValorTotalProjeto(funcionalidadesQueSomamPacotepremium, valorHora)).toBe(1840) // valor da hora * 200 * 1.15% do pacote_premium
 
     })
 })
